@@ -1,0 +1,16 @@
+<p>Here is the data !</p>
+<p>If there is no data here, go to /insert to initialize the database</p>
+<!-- <button type="button" id="submitme">Initialise database</button> -->
+
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Encrypted data</th>
+    </tr>
+    {% for item in data %}
+    <tr> 
+        <td>{{ item.key }}</td>
+        <td>{{ item.number }}</td>
+    </tr>
+    {% endfor %}
+</table>

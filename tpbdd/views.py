@@ -11,5 +11,9 @@ def homepage(request):
 	#query_results = YourModel.objects.all()
 	return render(request, 'index.html', context)
 
+def insertion(request):
+	#return render("The database has been added")
+	return HttpResponse("The database has been initialised")
+
 #def sender(request, data):
 #	return HttpResponse("Data send : %s" % data)

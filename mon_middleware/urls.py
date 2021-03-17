@@ -19,6 +19,7 @@ from tpbdd import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('', views.homepage)
+    path('', views.homepage),
+    path('insert', views.insertion)
     #path('')
 ]
