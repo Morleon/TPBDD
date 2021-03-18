@@ -1,6 +1,5 @@
 <p>Here is the data !</p>
 <p>If there is no data here, go to /insert to initialize the database</p>
-<!-- <button type="button" id="submitme">Initialise database</button> -->
 
 <table>
     <tr>
@@ -11,6 +10,19 @@
     <tr> 
         <td>{{ item.key }}</td>
         <td>{{ item.number }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Decrypted data</th>
+    </tr>
+    {% for decrypt in encrypted_data %}
+    <tr>
+        <td>{{ decrypt.key }}</td>
+        <td>{{ decrypt.number }}</td>
     </tr>
     {% endfor %}
 </table>
