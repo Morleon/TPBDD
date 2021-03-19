@@ -20,6 +20,8 @@ from tpbdd import views
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('', views.homepage),
-    path('insert', views.insertion)
+    path('insert', views.insertion),
+    path('comparate/<int:number1>/<int:number2>', views.comparate),
+    path('add/<int:number1>/<int:number2>', views.add)
     #path('')
 ]

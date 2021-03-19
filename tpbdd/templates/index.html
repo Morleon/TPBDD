@@ -1,6 +1,8 @@
 <p>Here is the data !</p>
 <p>If there is no data here, go to /insert to initialize the database</p>
+<p>To compare the data, go to /comparate/key1(int)/key2(int)</p>
 
+{% if data %}
 <table>
     <tr>
         <th>Key</th>
@@ -26,3 +28,4 @@
     </tr>
     {% endfor %}
 </table>
+{% endif %}
