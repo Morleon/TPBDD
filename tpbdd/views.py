@@ -12,10 +12,6 @@ def homepage(request):
 		encrypted_data = DatabaseData.objects.values('key','number').order_by('number')
 		cipher = OPE(b'mDErfp0Arn+noGTR+p0P9CmGU8+KKenk8ff+6aHxPi0=')
 
-		# isTrue = False
-		# if encrypted_data[3]["number"] > encrypted_data[1]["number"]:
-		# 	isTrue = True
-
 		for x in encrypted_data:
 			x["number"] = cipher.decrypt(x["number"])
 
